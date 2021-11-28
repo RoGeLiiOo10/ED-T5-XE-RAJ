@@ -119,7 +119,7 @@ public class DatosDesordenados{
         return new DatosOrdenados(a);
     }
     
-    public DatosOrdenados quickSort(){
+    public DatosOrdenados quickSort(){ /////////////ESTOOOOOOOO///////////////
         //arreglo a ordenar
         int[] o = this.getCopiaValores();
         
