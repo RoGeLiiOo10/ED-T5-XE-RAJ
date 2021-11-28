@@ -96,7 +96,7 @@ public class DatosDesordenados{
     }
     
     public DatosOrdenados insertSort(){
-         // obtener una copia de los datos desordenados
+        // obtener una copia de los datos desordenados
         int [] a = this.getCopiaValores();
         
 	int i, j, aux; 
