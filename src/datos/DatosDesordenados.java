@@ -142,6 +142,7 @@ public class DatosDesordenados{
                 }
             }
         }
+        
         System.out.println("SS-intercambios = " + ci);
         return new DatosOrdenados(A);
 }

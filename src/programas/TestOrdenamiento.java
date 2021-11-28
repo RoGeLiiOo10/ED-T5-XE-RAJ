@@ -56,6 +56,7 @@ public class TestOrdenamiento {
         DatosOrdenados mos = m.Shellsort();
         t2 = System.nanoTime(); //stop
         t = t2-t1;
+        
         System.out.println("n = "+n+ "t = "+t+ "ns."+" Shellsort ordenados: "+mos);
         
         System.out.println("=====================");
