@@ -51,6 +51,13 @@ public class TestOrdenamiento {
         
         System.out.println("=====================");
         
+        //Shellsort
+        t1 = System.nanoTime();
+        DatosOrdenados mos = m.Shellsort();
+        t2 = System.nanoTime();
+        t = t2-t1;
+        System.out.println("n = "+n+ "t = "+t+ " ss.Shellsort ordenados: "+mos); 
+        
         //mergeSort
         
         t1 = System.nanoTime();   // start
