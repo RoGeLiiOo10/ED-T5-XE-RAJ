@@ -45,7 +45,7 @@ public class TestOrdenamiento {
         
         t1 = System.nanoTime();   // start
         DatosOrdenados moq = m.quickSort();
-        t2 = System.nanoTime();   // stop
+        t2 = System.nanoTime();   // stop 
         t = t2 - t1;
         System.out.println("n = "+ n + " t = " + t + "ns. Rápido = " + moq);
         
