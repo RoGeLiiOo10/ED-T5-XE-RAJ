@@ -83,7 +83,6 @@ public class DatosDesordenados {
                 }
             }
         }
-        System.out.println("=====================");
         System.out.println("BS-comparaciones = " + cont);
         System.out.println("BS-permutaciones = " + ci);
 
