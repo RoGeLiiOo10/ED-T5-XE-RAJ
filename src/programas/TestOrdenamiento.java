@@ -32,6 +32,15 @@ public class TestOrdenamiento {
         
         System.out.println("=====================");
         
+        //bubbleSort (Descendente reordenamiento)
+        t1 = System.nanoTime();   // start
+        mob = m.bubbleSortDescendente();
+        t2 = System.nanoTime();   // stop
+        t = t2 - t1;
+        System.out.println("n = "+ n + " t = " + t + "ns. Burbuja(Descendente reordenamiento) = " + mob);
+        
+        System.out.println("=====================");
+        
         //bubbleSort (Ascendente)
         t1 = System.nanoTime();   // start
         mob = m.bubbleSortAscendente();
@@ -58,6 +67,15 @@ public class TestOrdenamiento {
         t2 = System.nanoTime();   // stop 
         t = t2 - t1;
         System.out.println("n = "+ n + " t = " + t + "ns. Rápido (Descendente) = " + moq);
+        
+        System.out.println("=====================");
+        
+        //quickSort (Descendente reordenamiento)
+        t1 = System.nanoTime();   // start
+        moq = m.quickSortDescendente();
+        t2 = System.nanoTime();   // stop 
+        t = t2 - t1;
+        System.out.println("n = "+ n + " t = " + t + "ns. Rápido (Descendente reordenamiento) = " + moq);
         
         System.out.println("=====================");
         
