@@ -30,5 +30,4 @@ public class DatosOrdenados {
         cad = cad + ".";
         return cad;
     }
-    
 }

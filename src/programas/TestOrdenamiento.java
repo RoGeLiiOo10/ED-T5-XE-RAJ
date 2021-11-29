@@ -23,15 +23,25 @@ public class TestOrdenamiento {
         m.generarValores();
         System.out.println("" + m);
         
-        //bubbleSort
+        //bubbleSort (Descendente)
         t1 = System.nanoTime();   // start
-        DatosOrdenados mob = m.bubbleSort();
+        DatosOrdenados mob = m.bubbleSortDescendente();
         t2 = System.nanoTime();   // stop
         t = t2 - t1;
-        System.out.println("n = "+ n + " t = " + t + "ns. Burbuja = " + mob);
+        System.out.println("n = "+ n + " t = " + t + "ns. Burbuja(Descendente) = " + mob);
         
         System.out.println("=====================");
         
+        //bubbleSort (Ascendente)
+        t1 = System.nanoTime();   // start
+        mob = m.bubbleSortAscendente();
+        t2 = System.nanoTime();   // stop
+        t = t2 - t1;
+        System.out.println("n = "+ n + " t = " + t + "ns. Burbuja(Ascendente) = " + mob);
+        
+        System.out.println("=====================");
+        
+        /*
         //insertSort
         t1 = System.nanoTime();   // start
         DatosOrdenados moi = m.insertSort();
@@ -40,17 +50,27 @@ public class TestOrdenamiento {
         System.out.println("n = "+ n + " t = " + t + "ns. Inserción = " + moi);
         
         System.out.println("=====================");
+        */
         
-        //quickSort
-        
+        //quickSort (Descendente)
         t1 = System.nanoTime();   // start
-        DatosOrdenados moq = m.quickSort();
+        DatosOrdenados moq = m.quickSortDescendente();
         t2 = System.nanoTime();   // stop 
         t = t2 - t1;
-        System.out.println("n = "+ n + " t = " + t + "ns. Rápido = " + moq);
+        System.out.println("n = "+ n + " t = " + t + "ns. Rápido (Descendente) = " + moq);
         
         System.out.println("=====================");
         
+        //quickSort (Ascendente)
+        t1 = System.nanoTime();   // start
+        moq = m.quickSortAscendente();
+        t2 = System.nanoTime();   // stop 
+        t = t2 - t1;
+        System.out.println("n = "+ n + " t = " + t + "ns. Rápido (Ascendente) = " + moq);
+        
+        System.out.println("=====================");
+        
+        /*
         //mergeSort
         
         t1 = System.nanoTime();   // start
@@ -60,5 +80,6 @@ public class TestOrdenamiento {
         System.out.println("n = "+ n + " t = " + t + "ns. Merge = " + mom);
         
         System.out.println("=====================");
+        */
     }
 }
